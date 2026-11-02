@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Mondo - Calcio, Basket, Pallavolo e Hockey</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #1b365d;
+            color: #ffffff;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+        }
+
+        nav {
+            background-color: #0b1d3a;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ffbf00;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 5px solid #1b365d;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .sports-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .sport-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            flex: 1 1 calc(50% - 20px);
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        @media (max-width: 768px) {
+            .sport-card {
+                flex: 1 1 100%;
+            }
+        }
+
+        .sport-card h3 {
+            color: #1b365d;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ffbf00;
+            padding-bottom: 5px;
+        }
+
+        .sport-card p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #1b365d;
+            color: #ffffff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: #0b1d3a;
+        }
+
+        footer {
+            background-color: #1b365d;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sport Mondo</h1>
+        <p>Portale informativo sulle discipline sportive di squadra</p>
+    </header>
+
+    <nav>
+        <a href="#calcio">Calcio</a>
+        <a href="#basket">Basket</a>
+        <a href="#pallavolo">Pallavolo</a>
+        <a href="#hockey">Hockey</a>
+    </nav>
+
+    <main class="container">
+
+        <section class="intro">
+            <h2>Panoramica delle Discipline</h2>
+            <p>Benvenuti sul portale dedicato agli sport di squadra. Esplora le sezioni sottostanti per scoprire le caratteristiche e le regole fondamentali di Calcio, Basket, Pallavolo e Hockey.</p>
+        </section>
+
+        <section class="sports-grid">
+
+            <article class="sport-card" id="calcio">
+                <h3>Calcio</h3>
+                <p>Il calcio è uno sport di squadra giocato con un pallone sferico su un campo rettangolare in erba. Due squadre da 11 giocatori si affrontano con l'obiettivo di segnare nella porta avversaria senza usare le mani.</p>
+                <a href="#" class="btn">Approfondisci</a>
+            </article>
+
+            <article class="sport-card" id="basket">
+                <h3>Basket</h3>
+                <p>La pallacanestro è uno sport dinamico in cui due squadre composte da 5 giocatori cercano di realizzare punti facendo passare il pallone all'interno del canestro avversario, situato a 3,05 metri di altezza.</p>
+                <a href="#" class="btn">Approfondisci</a>
+            </article>
+
+            <article class="sport-card" id="pallavolo">
+                <h3>Pallavolo</h3>
+                <p>La pallavolo vede contrapposte due squadre da 6 giocatori su un campo diviso da una rete. L'obiettivo è far cadere la palla nel campo avversario rispettando il limite massimo di tre tocchi di squadra.</p>
+                <a href="#" class="btn">Approfondisci</a>
+            </article>
+
+            <article class="sport-card" id="hockey">
+                <h3>Hockey</h3>
+                <p>L'hockey è una disciplina veloce e tattica, praticata su ghiaccio o su prato. I giocatori utilizzano un bastone curvo (stecca) per muovere il disco o la palla ed effettuare tiri verso la porta avversaria.</p>
+                <a href="#" class="btn">Approfondisci</a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sport Mondo - Progetto Didattico HTML/CSS per AFM</p>
+    </footer>
+
+</body>
+</html>
